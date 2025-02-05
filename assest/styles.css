@@ -72,7 +72,7 @@
     background-image: url("../files/florestop.png");
     background-size: cover;
     /* Cubre todo el div */
-    background-position: top left;
+    background-position: inherit;
     /* Centra la imagen */
     background-repeat: no-repeat;
     /* Evita que se repita la imagen */
@@ -171,15 +171,16 @@
 }
 
 .txtMensaje {
-    color: black;
+    color: #28344F;
     /* Color del texto */
-    font-size: 50px;
+    font-family: "TT Drugs Trial Regular";
+    font-size: 40px;
     /* Tamaño de la fuente */
     text-align: center;
     /* Alineación del texto */
-    padding: 150px;
+    padding: 120px;
     /* Espacio alrededor del texto */
-    background-color: #B3BDCC;
+    background-color: #F5F4F9;
     /* Fondo semi-transparente para el texto */
 }
 
