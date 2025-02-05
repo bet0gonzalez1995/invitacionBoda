@@ -281,7 +281,7 @@
 
 /* Media queries para diseño responsivo */
 @media (max-width: 768px) {
-    .florestop{
+    .florestop, .floresmiddle,.floresleft,.floresright,.floresMR{
         background-size: contain;
     }
     .monograma{
