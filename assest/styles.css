@@ -72,7 +72,7 @@
     background-image: url("../files/florestop.png");
     background-size: cover;
     /* Cubre todo el div */
-    background-position: right;
+    background-position: inherit;
     /* Centra la imagen */
     background-repeat: no-repeat;
     /* Evita que se repita la imagen */
@@ -281,6 +281,13 @@
 
 /* Media queries para diseño responsivo */
 @media (max-width: 768px) {
+    .florestop{
+        background-size: contain;
+    }
+    .monograma{
+        margin-top: 30px;
+        width: 50%;
+    }
     .txtNovios {
         font-size: 50px;
     }
