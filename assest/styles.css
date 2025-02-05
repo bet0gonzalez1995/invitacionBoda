@@ -120,7 +120,7 @@
     background-image: url("../files/floresleft.png");
     background-size: cover;
     /* Cubre todo el div */
-    background-position: inherit;
+    background-position: center;
     /* Centra la imagen */
     background-repeat: no-repeat;
     /* Evita que se repita la imagen */
@@ -185,7 +185,6 @@
 }
 
 .invitacion {
-    border: 1px solid red;
     padding: 40px;
     /* Espacio interior */
     text-align: center;
@@ -195,32 +194,29 @@
 
 }
 
-.titulo h1 {
-    font-size: 2em;
+.titulo h1, .padrinos {
+    font-family: "adelia";
+    font-size: 40px;
+    color: #8A95A5;
+    vertical-align: baseline;
+    line-height: 1.9em;
+    text-align: center;
     /* Tamaño del título */
     margin-bottom: 20px;
     /* Espacio inferior */
 }
 
-.datos-novios {
+.datos-novios, .padrinos p {
     display: flex;
     justify-content: space-around;
     margin-bottom: 30px;
+    font-family: "TT Drugs Trial Regular";
+    font-size:15px; 
+    line-height:1.7em; 
+    color: #8A95A5;
 }
-
-.novio,
-.novia {
-    text-align: center;
-    /* Alineación izquierda para los nombres */
-}
-
-.padrinos {
-    margin-bottom: 20px;
-}
-
-.padrinos p {
-    margin: 5px 0;
-    /* Espacio entre párrafos */
+.padrino{
+    margin-top: 40px;
 }
 
 .carrusel {
