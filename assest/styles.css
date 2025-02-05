@@ -246,10 +246,24 @@
     text-align: center; /* Centra el texto dentro de la tarjeta */
     width: 30%; /* Ancho fijo para las tarjetas */
   }
+  .ceremonia{
+    font-family: "adelia";
+    font-size: 40px;
+    color: #8A95A5;
+  }
+  .horario{
+    font-family: "TT Drugs Trial Regular";
+    font-size: 24px;
+  }
+  .lugar{
+    font-size: 22px;
+    font-family: "TT Drugs Trial Regular";
+    line-height: 1.7em;
+  }
   
   .icon {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto 10px; /* Centra el icono y añade espacio debajo */
   }
   
@@ -264,8 +278,8 @@
   }
   
   .tarjeta button {
-    background-color: #007bff; /* Color de fondo azul */
-    color: white;
+    background-color: #28344F; /* Color de fondo azul */
+    color: gray;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -273,6 +287,19 @@
     margin-top: 10px;
   }
 
+.codigovestimenta{
+    font-family: "adelia";
+    font-size: 40px;
+    color: #8A95A5;
+}
+.lugar{
+    font-size: 22px;
+    color: #8A95A5;
+}
+.detailvestimenta{
+    font-size: 17px;
+    color: #8A95A5;
+}
 
 
 /* Media queries para diseño responsivo */
