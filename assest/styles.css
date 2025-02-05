@@ -129,7 +129,6 @@
     justify-content: center;
     /* Centrar horizontalmente */
     align-items: center;
-    /* Centrar verticalmente */
 }
 
 .floresMR {
@@ -242,7 +241,6 @@
 
 .tarjeta {
     padding: 20px;
-  
     text-align: center; /* Centra el texto dentro de la tarjeta */
     width: 30%; /* Ancho fijo para las tarjetas */
   }
@@ -287,6 +285,10 @@
     margin-top: 10px;
   }
 
+.imgvestimenta{
+    width: 100%;
+    height:100% ;
+}
 .codigovestimenta{
     font-family: "adelia";
     font-size: 40px;
@@ -306,6 +308,11 @@
 @media (max-width: 768px) {
     .florestop, .floresmiddle,.floresleft,.floresright,.floresMR{
         background-size: contain;
+    }
+    .floresleft{
+/* Centrar verticalmente */
+flex-wrap: wrap; /* Permite que las tarjetas se ajusten a varias líneas */
+justify-content: space-around; /* Distribuye las tarjetas uniformemente */
     }
     .monograma{
         margin-top: 30px;
@@ -334,5 +341,42 @@
         flex: 0 0 100%;
         /* Cada imagen ocupa el 100% del ancho */
         max-width: 100%;
+    }
+
+    .tarjeta {
+        width: 100%; /* Ocupa todo el ancho en dispositivos móviles */
+        margin-bottom: 20px; /* Espacio entre tarjetas */
+        
+    }
+
+    .imgvestimenta{
+        width: 50%;
+        height:50% ;
+    }
+
+    .codigovestimenta{
+        margin-top: 10px;
+        font-size: 24px;
+    }
+
+    .invitacion {
+        padding: 40px;
+        /* Espacio interior */
+        text-align: center;
+        /* Texto centrado */
+        width: 90%;
+        /* Ancho de la tarjeta (ajusta según necesites) */
+    
+    }
+    .titulo h1, .padrinos {
+        font-family: "adelia";
+        font-size: 24px;
+        color: #8A95A5;
+        vertical-align: baseline;
+        line-height: 1.9em;
+        text-align: center;
+        /* Tamaño del título */
+        margin-bottom: 20px;
+        /* Espacio inferior */
     }
 }
