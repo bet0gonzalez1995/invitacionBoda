@@ -172,9 +172,9 @@
         function moverCarrusel(direccion) {
             posicion += direccion;
             if (posicion < 0) {
-                posicion = 0;
+                posicion = carrusel.children.length - 1; // Vuelve al último elemento
             } else if (posicion > carrusel.children.length - 1) {
-                posicion = carrusel.children.length - 1;
+                posicion = 0; // Vuelve al primer elemento
             }
             carrusel.style.transform = `translateX(-${posicion * 100}%)`;
         }
