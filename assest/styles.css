@@ -72,7 +72,7 @@
     background-image: url("../files/florestop.png");
     background-size: cover;
     /* Cubre todo el div */
-    background-position: inherit;
+    background-position: right;
     /* Centra la imagen */
     background-repeat: no-repeat;
     /* Evita que se repita la imagen */
