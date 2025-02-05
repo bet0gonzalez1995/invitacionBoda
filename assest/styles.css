@@ -1,0 +1,291 @@
+/*
+#28344F (Azul oscuro)
+#8A95A5 (Gris azulado medio)
+#B3BDCC (Gris azulado claro)
+#D9CBBF (Beige claro)
+#F5F4F9 (Blanco hueso)
+*/
+
+@font-face {
+    font-family: 'adelia'; /* Nombre que le darás a la fuente */
+    src: url('adelia_3/adelia.ttf') format('truetype'); /* Ruta al archivo .ttf */
+    font-weight: normal; /* Peso de la fuente (normal, bold, etc.) */
+    font-style: normal; /* Estilo de la fuente (normal, italic, etc.) */
+  }
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    /* Utilizamos flexbox para centrar verticalmente */
+    flex-direction: column;
+    /* Colocamos los elementos en columna */
+    z-index: -1;
+    text-align: center;
+    overflow: hidden;
+}
+
+.monograma {
+    height: auto;
+    width: 30%;
+    left: 35%;
+    /* Centrar horizontalmente */
+
+    border: 2px solid green;
+}
+
+.txtNovios {
+    font-family: "adelia";
+    font-size: 100px;
+}
+
+.txtBoda {
+    font-size: 50px;
+}
+
+.txtDateBoda {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-size: 50px;
+    border: 1px solid yellow;
+}
+
+.florestop {
+    width: 100%;
+    /* Ancho del viewport (pantalla) */
+    height: 100%;
+    /* Alto del viewport (pantalla) */
+    background-image: url("../files/florestop.png");
+    background-size: cover;
+    /* Cubre todo el div */
+    background-position: top left;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que se repita la imagen */
+}
+
+.floresmiddle {
+    width: 100%;
+    /* Ancho del viewport (pantalla) */
+    height: 100%;
+    /* Alto del viewport (pantalla) */
+    background-image: url("../files/floresmiddle.png");
+    background-size: cover;
+    /* Cubre todo el div */
+    background-position: bottom left;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que se repita la imagen */
+}
+
+.floresright {
+    width: 100%;
+    /* Ancho del viewport (pantalla) */
+    height: 100%;
+    /* Alto del viewport (pantalla) */
+    background-image: url("../files/floresright.png");
+    background-size: cover;
+    /* Cubre todo el div */
+    background-position: inherit;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que se repita la imagen */
+    display: flex;
+    /* Habilitar Flexbox */
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+}
+
+.floresleft {
+    width: 100%;
+    /* Ancho del viewport (pantalla) */
+    height: 100%;
+    /* Alto del viewport (pantalla) */
+    background-image: url("../files/floresleft.png");
+    background-size: cover;
+    /* Cubre todo el div */
+    background-position: inherit;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que se repita la imagen */
+    display: flex;
+    /* Habilitar Flexbox */
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+}
+
+.floresMR {
+    width: 100%;
+    /* Ancho del viewport (pantalla) */
+    height: 100%;
+    /* Alto del viewport (pantalla) */
+    background-image: url("../files/floresMesaRegalo.png");
+    background-size: cover;
+    /* Cubre todo el div */
+    background-position: inherit;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que se repita la imagen */
+    display: flex;
+    /* Habilitar Flexbox */
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+}
+
+.cuenta-regresiva {
+    margin-bottom: 250px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 100px;
+    border: 1px solid red;
+}
+
+.tiempo {
+    padding: 30px;
+}
+
+.separador {
+    margin-bottom: 100px;
+}
+
+.txtMensaje {
+    color: black;
+    /* Color del texto */
+    font-size: 50px;
+    /* Tamaño de la fuente */
+    text-align: center;
+    /* Alineación del texto */
+    padding: 150px;
+    /* Espacio alrededor del texto */
+    background-color: #B3BDCC;
+    /* Fondo semi-transparente para el texto */
+}
+
+.invitacion {
+    border: 1px solid red;
+    padding: 40px;
+    /* Espacio interior */
+    text-align: center;
+    /* Texto centrado */
+    width: 50%;
+    /* Ancho de la tarjeta (ajusta según necesites) */
+
+}
+
+.titulo h1 {
+    font-size: 2em;
+    /* Tamaño del título */
+    margin-bottom: 20px;
+    /* Espacio inferior */
+}
+
+.datos-novios {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.novio,
+.novia {
+    text-align: center;
+    /* Alineación izquierda para los nombres */
+}
+
+.padrinos {
+    margin-bottom: 20px;
+}
+
+.padrinos p {
+    margin: 5px 0;
+    /* Espacio entre párrafos */
+}
+
+.carrusel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.imagen {
+    flex: 0 0 33.33%;
+    /* Cada imagen ocupa un tercio del ancho */
+    max-width: 33.33%;
+    padding: 5px;
+    /* Espacio entre imágenes */
+    box-sizing: border-box;
+    /* Incluye el padding en el ancho total */
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tarjeta {
+    padding: 20px;
+  
+    text-align: center; /* Centra el texto dentro de la tarjeta */
+    width: 30%; /* Ancho fijo para las tarjetas */
+  }
+  
+  .icon {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 10px; /* Centra el icono y añade espacio debajo */
+  }
+  
+  .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen al contenedor */
+  }
+  
+  .tarjeta p {
+    margin: 30px 0; /* Espacio entre párrafos */
+  }
+  
+  .tarjeta button {
+    background-color: #007bff; /* Color de fondo azul */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+
+
+/* Media queries para diseño responsivo */
+@media (max-width: 768px) {
+    .txtNovios {
+        font-size: 50px;
+    }
+
+    .txtBoda {
+        font-size: 25px;
+    }
+
+    .tiempo {
+        font-size: 25px;
+        padding: 5px;
+    }
+
+    .txtMensaje {
+        font-size: 25px;
+        padding: 75px;
+        /* Espacio alrededor del texto */
+    }
+
+    .imagen {
+        flex: 0 0 100%;
+        /* Cada imagen ocupa el 100% del ancho */
+        max-width: 100%;
+    }
+}
