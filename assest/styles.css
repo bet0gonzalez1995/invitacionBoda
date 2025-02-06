@@ -515,7 +515,7 @@ a {
         font-size: 24px;
         color: #8A95A5;
         vertical-align: baseline;
-        line-height: 50px;
+        line-height: 65px;
         text-align: center;
         /* Tamaño del título */
         margin-bottom: 20px;
@@ -545,6 +545,17 @@ a {
     
     .dvfooter{
         margin-bottom: 150px;
+    }
+
+    .ceremonia {
+        height: 100px;
+        font-family: "adelia";
+        font-size: 40px;
+        color: #8A95A5;
+    }
+    .Civil{
+        font-size: 25px;
+        line-height: 50px;
     }
 
 }
