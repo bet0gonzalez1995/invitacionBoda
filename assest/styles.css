@@ -164,6 +164,26 @@
     /* Centrar verticalmente */
 }
 
+.floresfooter {
+    width: 100%;
+    /* Ancho del viewport (pantalla) */
+    height: 100%;
+    /* Alto del viewport (pantalla) */
+    background-image: url("../files/floresfondo.png");
+    background-size: initial;
+    /* Cubre todo el div */
+    background-position: bottom;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que se repita la imagen */
+    display: flex;
+    /* Habilitar Flexbox */
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+}
+
 .cuenta-regresiva {
     margin-bottom: 250px;
     justify-content: center;
@@ -275,6 +295,7 @@
 }
 
 .ceremonia {
+    height: 100px;
     font-family: "adelia";
     font-size: 40px;
     color: #8A95A5;
@@ -349,6 +370,23 @@ a {
 .padrinoTitulo{
     font-family: "TT Drugs Trial Regular";
     margin-top: 30px;
+}
+.msgfooter{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 30px;
+    font-family: "TT Drugs Trial Regular";
+    color: #8A95A5;
+}
+
+.msgfinal{
+    font-family: "adelia";
+    font-size: 80px;
+    color: #8A95A5;
+}
+
+.dvfooter{
+    margin-bottom: 150px;
 }
 
 
@@ -488,6 +526,25 @@ a {
     .padrinoTitulo{
         font-family: "TT Drugs Trial Regular";
         font-size: 20px;
+    }
+
+    .msgfooter{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 10px;
+        font-size: 13px;
+        font-family: "TT Drugs Trial Regular";
+        color: #8A95A5;
+    }
+    
+    .msgfinal{
+        font-family: "adelia";
+        font-size: 40px;
+        color: #8A95A5;
+    }
+    
+    .dvfooter{
+        margin-bottom: 150px;
     }
 
 }
