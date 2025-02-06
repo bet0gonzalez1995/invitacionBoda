@@ -374,9 +374,15 @@ a {
 .msgfooter{
     margin-top: 100px;
     margin-bottom: 100px;
-    font-size: 30px;
+    color: #28344F;
+    /* Color del texto */
     font-family: "TT Drugs Trial Regular";
-    color: #8A95A5;
+    font-size: 40px;
+    /* Tamaño de la fuente */
+    text-align: center;
+    /* Alineación del texto */
+    padding: 120px;
+    /* Espacio alrededor del texto */
 }
 
 .msgfinal{
@@ -529,12 +535,17 @@ a {
     }
 
     .msgfooter{
-        margin-top: 50px;
-        margin-bottom: 50px;
+        /*
         padding: 10px;
         font-size: 13px;
         font-family: "TT Drugs Trial Regular";
-        color: #8A95A5;
+        color: #8A95A5;*/
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 15px;
+        line-height: 30px;
+        text-align: center;
+        padding: 10px;
     }
     
     .msgfinal{
