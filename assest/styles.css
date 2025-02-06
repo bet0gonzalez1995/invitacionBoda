@@ -7,23 +7,36 @@
 */
 
 @font-face {
-    font-family: 'adelia'; /* Nombre que le darás a la fuente */
-    src: url('adelia_3/adelia.ttf') format('truetype'); /* Ruta al archivo .ttf */
-    font-weight: normal; /* Peso de la fuente (normal, bold, etc.) */
-    font-style: normal; /* Estilo de la fuente (normal, italic, etc.) */
+    font-family: 'adelia';
+    /* Nombre que le darás a la fuente */
+    src: url('adelia_3/adelia.ttf') format('truetype');
+    /* Ruta al archivo .ttf */
+    font-weight: normal;
+    /* Peso de la fuente (normal, bold, etc.) */
+    font-style: normal;
+    /* Estilo de la fuente (normal, italic, etc.) */
 }
 
 @font-face {
-    font-family: 'Cormorant Garamond'; /* Nombre que le darás a la fuente */
-    src: url('Cormorant_Garamond/CormorantGaramond-Regular.ttf') format('truetype'); /* Ruta al archivo .ttf */
-    font-weight: normal; /* Peso de la fuente (normal, bold, etc.) */
-    font-style: normal; /* Estilo de la fuente (normal, italic, etc.) */
+    font-family: 'Cormorant Garamond';
+    /* Nombre que le darás a la fuente */
+    src: url('Cormorant_Garamond/CormorantGaramond-Regular.ttf') format('truetype');
+    /* Ruta al archivo .ttf */
+    font-weight: normal;
+    /* Peso de la fuente (normal, bold, etc.) */
+    font-style: normal;
+    /* Estilo de la fuente (normal, italic, etc.) */
 }
+
 @font-face {
-    font-family: 'TT Drugs Trial Regular'; /* Nombre que le darás a la fuente */
-    src: url('tt_drugs/TT_Drugs_Trial_Regular.otf') format('truetype'); /* Ruta al archivo .ttf */
-    font-weight: normal; /* Peso de la fuente (normal, bold, etc.) */
-    font-style: normal; /* Estilo de la fuente (normal, italic, etc.) */
+    font-family: 'TT Drugs Trial Regular';
+    /* Nombre que le darás a la fuente */
+    src: url('tt_drugs/TT_Drugs_Trial_Regular.otf') format('truetype');
+    /* Ruta al archivo .ttf */
+    font-weight: normal;
+    /* Peso de la fuente (normal, bold, etc.) */
+    font-style: normal;
+    /* Estilo de la fuente (normal, italic, etc.) */
 }
 
 .contenedor {
@@ -158,11 +171,24 @@
     align-items: center;
     font-size: 50px;
     font-family: "TT Drugs Trial Regular";
-    color:  #8A95A5;;
+    color: #8A95A5;
+    ;
 }
 
 .tiempo {
     padding: 30px;
+    margin-bottom: 20px;
+}
+
+.date {
+    font-size: 25px;
+}
+
+#dias,
+#horas,
+#minutos,
+#segundos {
+    font-size: 40px;
 }
 
 .separador {
@@ -193,7 +219,8 @@
 
 }
 
-.titulo h1, .padrinos {
+.titulo h1,
+.padrinos {
     font-family: "adelia";
     font-size: 40px;
     color: #8A95A5;
@@ -205,17 +232,17 @@
     /* Espacio inferior */
 }
 
-.datos-novios, .padrinos p {
+.datos-novios,
+.padrinos p {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 30px;
     font-family: "TT Drugs Trial Regular";
-    font-size:15px; 
-    line-height:1.7em; 
+    font-size: 15px;
+    line-height: 1.7em;
     color: #8A95A5;
 }
-.padrino{
-    margin-top: 40px;
+.datos-novios{
+    margin-bottom: 20px;
 }
 
 .carrusel {
@@ -241,89 +268,121 @@
 
 .tarjeta {
     padding: 20px;
-    text-align: center; /* Centra el texto dentro de la tarjeta */
-    width: 30%; /* Ancho fijo para las tarjetas */
-  }
-  .ceremonia{
+    text-align: center;
+    /* Centra el texto dentro de la tarjeta */
+    width: 30%;
+    /* Ancho fijo para las tarjetas */
+}
+
+.ceremonia {
     font-family: "adelia";
     font-size: 40px;
     color: #8A95A5;
-  }
-  .horario{
+}
+
+.horario {
     font-family: "TT Drugs Trial Regular";
     font-size: 24px;
-  }
-  .lugar{
+}
+
+.lugar {
     font-size: 22px;
     font-family: "TT Drugs Trial Regular";
     line-height: 1.7em;
-  }
-  
-  .icon {
+}
+
+.icon {
     width: 200px;
     height: 200px;
-    margin: 0 auto 10px; /* Centra el icono y añade espacio debajo */
-  }
-  
-  .icon img {
+    margin: 0 auto 10px;
+    /* Centra el icono y añade espacio debajo */
+}
+
+.icon img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajusta la imagen al contenedor */
-  }
-  
-  .tarjeta p {
-    margin: 30px 0; /* Espacio entre párrafos */
-  }
-  
-  .tarjeta button {
-    background-color: #28344F; /* Color de fondo azul */
+    object-fit: cover;
+    /* Ajusta la imagen al contenedor */
+}
+
+.tarjeta p {
+    margin: 30px 0;
+    /* Espacio entre párrafos */
+}
+
+.tarjeta button {
+    background-color: #28344F;
+    /* Color de fondo azul */
     color: gray;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
-  }
-
-.imgvestimenta{
-    width: 100%;
-    height:100% ;
 }
-.codigovestimenta{
+
+.imgvestimenta {
+    width: 20%;
+    height: 20%;
+    margin-bottom: 30px;
+}
+
+.codigovestimenta {
     font-family: "adelia";
     font-size: 40px;
     color: #8A95A5;
 }
-.lugar{
+
+.lugar {
     font-size: 22px;
     color: #8A95A5;
 }
-.detailvestimenta{
+
+.detailvestimenta {
     font-size: 17px;
     color: #8A95A5;
+}
+.padrinoTitulo{
+    font-family: "TT Drugs Trial Regular";
+    margin-top: 30px;
 }
 
 
 /* Media queries para diseño responsivo */
 @media (max-width: 768px) {
-    .florestop, .floresmiddle,.floresleft,.floresright,.floresMR{
+
+    .florestop,
+    .floresmiddle,
+    .floresleft,
+    .floresright,
+    .floresMR {
         background-size: contain;
     }
-    .floresleft{
-/* Centrar verticalmente */
-flex-wrap: wrap; /* Permite que las tarjetas se ajusten a varias líneas */
-justify-content: space-around; /* Distribuye las tarjetas uniformemente */
+
+    .floresleft {
+        /* Centrar verticalmente */
+        flex-wrap: wrap;
+        /* Permite que las tarjetas se ajusten a varias líneas */
+        justify-content: space-around;
+        /* Distribuye las tarjetas uniformemente */
     }
-    .monograma{
+
+    .cuenta-regresiva {
+        margin-bottom: 50px;
+    }
+
+    .monograma {
         margin-top: 30px;
         width: 50%;
     }
+
     .txtNovios {
-        font-size: 50px;
+        font-size: 45px;
     }
 
     .txtBoda {
         font-size: 25px;
+        margin-bottom: 20px;
     }
 
     .tiempo {
@@ -331,9 +390,22 @@ justify-content: space-around; /* Distribuye las tarjetas uniformemente */
         padding: 5px;
     }
 
+    .date {
+        font-size: 20px;
+    }
+
+    #dias,
+    #horas,
+    #minutos,
+    #segundos {
+        font-size: 30px;
+    }
+
     .txtMensaje {
-        font-size: 25px;
-        padding: 75px;
+        font-size: 17px;
+        line-height: 40px;
+        text-align: center;
+        padding: 40px;
         /* Espacio alrededor del texto */
     }
 
@@ -342,19 +414,33 @@ justify-content: space-around; /* Distribuye las tarjetas uniformemente */
         /* Cada imagen ocupa el 100% del ancho */
         max-width: 100%;
     }
+    .datos-novios{
+        display: contents;
+    }
+    .novio {
+        width: 100%; /* Ocupa todo el ancho en dispositivos móviles */
+        margin-bottom: 20px; /* Espacio entre elementos */
+    }
+
+    .novia {
+        width: 100%; /* Ocupa todo el ancho en dispositivos móviles */
+    }
 
     .tarjeta {
-        width: 100%; /* Ocupa todo el ancho en dispositivos móviles */
-        margin-bottom: 20px; /* Espacio entre tarjetas */
-        
+        width: 100%;
+        /* Ocupa todo el ancho en dispositivos móviles */
+        margin-bottom: 20px;
+        /* Espacio entre tarjetas */
+
     }
 
-    .imgvestimenta{
+    .imgvestimenta {
         width: 50%;
-        height:50% ;
+        height: 50%;
+        margin-bottom: 0px;
     }
 
-    .codigovestimenta{
+    .codigovestimenta {
         margin-top: 10px;
         font-size: 24px;
     }
@@ -366,17 +452,38 @@ justify-content: space-around; /* Distribuye las tarjetas uniformemente */
         /* Texto centrado */
         width: 90%;
         /* Ancho de la tarjeta (ajusta según necesites) */
-    
+
     }
-    .titulo h1, .padrinos {
+
+    .titulo h1,
+    .padrinos {
         font-family: "adelia";
         font-size: 24px;
         color: #8A95A5;
         vertical-align: baseline;
-        line-height: 1.9em;
+        line-height: 50px;
+        text-align: center;
+        /* Tamaño del título */
+        margin-top: 70px;
+        /* Espacio inferior */
+    }
+
+    .padrinos h1{
+        font-family: "adelia";
+        font-size: 24px;
+        color: #8A95A5;
+        vertical-align: baseline;
+        line-height: 50px;
         text-align: center;
         /* Tamaño del título */
         margin-bottom: 20px;
+        margin-top: 70px;
         /* Espacio inferior */
     }
+
+    .padrinoTitulo{
+        font-family: "TT Drugs Trial Regular";
+        font-size: 20px;
+    }
+
 }
