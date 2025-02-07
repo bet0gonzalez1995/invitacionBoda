@@ -128,7 +128,7 @@
 .floresleft {
     width: 100%;
     /* Ancho del viewport (pantalla) */
-    height: 100%;
+    height: 970px;
     /* Alto del viewport (pantalla) */
     background-image: url("../files/floresleft.png");
     background-size: cover;
@@ -396,6 +396,61 @@ a {
 }
 
 
+
+.gift-card {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.gift-icon {
+    font-size: 100px;
+    color: #28344F;
+    margin-bottom: 10px;
+}
+
+.gift-message {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.gift-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.amazon-button, .liverpool-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.amazon-button {
+    background-color: #B3BDCC;
+    /* Color de fondo azul */
+    color: gray;
+}
+
+.liverpool-button {
+    background-color: #B3BDCC;
+    /* Color de fondo azul */
+    color: gray;
+}
+
+.amazon-button:hover, .liverpool-button:hover {
+    background-color: #333;
+}
+
+
 /* Media queries para diseño responsivo */
 @media (max-width: 768px) {
 
@@ -408,6 +463,7 @@ a {
     }
 
     .floresleft {
+        height: 100%;
         /* Centrar verticalmente */
         flex-wrap: wrap;
         /* Permite que las tarjetas se ajusten a varias líneas */
@@ -567,6 +623,18 @@ a {
     .Civil{
         font-size: 25px;
         line-height: 50px;
+    }
+
+    .gift-card {
+        max-width: 90%;
+    }
+
+    .gift-buttons {
+        flex-direction: column;
+    }
+
+    .amazon-button, .liverpool-button {
+        margin: 10px 0;
     }
 
 }
