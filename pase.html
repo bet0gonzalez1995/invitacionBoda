@@ -1,172 +1,145 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invitación de Boda</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Wedding Invitation</title>
 </head>
-
-<?php
-header("Content-type:application/pdf");
-
-// It will be called downloaded.pdf
-header("Content-Disposition:attachment;filename=\"downloaded.pdf\"");
-
-// The PDF source is in original.pdf
-readfile("original.pdf");
-?>
-
 <style>
-    /* style.css */
-
     body {
-        font-family: sans-serif;
-        background-color: #f8f0e3;
         margin: 0;
-        /* Elimina los márgenes predeterminados del cuerpo */
+        overflow: hidden;
+        /* Prevent scroll */
+        background-color: #F5F4F9;
+        /* Example background color */
+        font-family: sans-serif;
+        /* Use a default font */
     }
 
-    .background-flowers {
-        position: fixed;
-        /* Fija el fondo para que no se desplace con el scroll */
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        z-index: -1;
-        /* Envía el fondo detrás del contenido */
+    .invitation-container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
     }
 
     .flower {
         position: absolute;
-    
+        width: 100%;
+        /* Adjust as needed */
         height: 100%;
-        /* Ajusta la altura al 100% del contenedor */
-        object-fit: cover;
-        /* Cubre todo el contenedor con la imagen */
-        opacity: 0.8;
     }
 
-    .flower-left {
-        top: 0;
-        left: 0;
-       
+    .top-right {
+        top: 0px;
+        right: 0px;
     }
 
-    .flower-right {
-        bottom: 0;
-        right: 0;
+    .bottom-left {
+        bottom: 0px;
+        left: 0px;
     }
 
-    .invitation-container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 80%;
-        max-width: 600px;
+    .content {
+        background-color: rgba(255, 255, 255, 0.8);
+        /* Semi-transparent white */
+        padding: 40px;
+        border-radius: 10px;
+        text-align: center;
         z-index: 1;
     }
 
-    .invitation-card {
-        background-color: #fff;
-        padding: 40px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        text-align: center;
-    }
-
-    .logo {
+    .monogram {
+        width: 50%;
+        height: auto;
         margin-bottom: 20px;
     }
 
-    .logo img {
-        max-width: 200px;
-    }
-
-    .title {
-        color: #333;
-        margin-bottom: 10px;
-    }
-
-    .date {
-        color: #666;
-        margin-bottom: 20px;
-    }
-
-    .invitation-text {
-        color: #333;
+    .text-box {
         margin-bottom: 30px;
     }
 
+    .names {
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .date {
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+
+    .invitation-text {
+        font-style: italic;
+        margin-top: 20px;
+    }
+
     .ticket {
-        background-color: #f0f0f0;
+        background-color: #ddd;
         padding: 20px;
         border-radius: 5px;
         margin-bottom: 30px;
     }
 
-    .ticket-for {
-        color: #666;
-        margin-bottom: 5px;
+    .ticket-text {
+        font-size: 1.1em;
     }
 
-    .guest-name {
-        color: #333;
+    .family {
+        font-size: 1.3em;
         font-weight: bold;
-        margin-bottom: 10px;
+        margin-top: 10px;
     }
 
-    .ticket-number {
-        color: #666;
+    .passes {
+        font-size: 1.2em;
+        margin-top: 10px;
     }
 
-    .confirm-button {
-        background-color: #e6b32a;
-        color: #fff;
-        padding: 10px 20px;
+    .open-button {
+        background-color: #B3BDCC;
+        /* Color de fondo azul */
+        color: gray;
         border: none;
+        padding: 10px 20px;
         border-radius: 5px;
-        text-decoration: none;
+        cursor: pointer;
+        margin-top: 10px;
     }
 
-    .footer {
-        color: #666;
-        margin-top: 20px;
+    a {
+        text-decoration: none;
+        /* Elimina el subrayado predeterminado */
+        color: #28344F;
     }
 </style>
 
 <body>
-    <div class="container-fluid p-0">
-        <div class="background-flowers">
-            <img src="files/floresleft-removebg-preview.png" alt="Flowers" class="flower flower-left">
-            <img src="files/floresright-removebg-preview.png" alt="Flowers" class="flower flower-right">
-        </div>
-        <div class="invitation-container">
-            <div class="invitation-card">
-                <div class="logo">
-                    <img src="files/monogramaSF.png" alt="Logo">
-                </div>
-                <h1 class="title">Paola & Armando</h1>
-                <p class="date">09 • 12 • 23</p>
+    <div class="invitation-container">
+        <img class="flower  bottom-left " src="files/floresleft-removebg-preview.png" alt="Flower">
+        <img class="flower top-right" src="files/floresright-removebg-preview.png" alt="Flower">
+        <div class="content">
+            <img class="monogram" src="files/monogramaSF.png" alt="Monogram">
+            <div class="text-box">
+                <p class="names">Amelia & Carlos</p>
+                <p class="date">26 • Jul • 25</p>
                 <p class="invitation-text">Estás cordialmente invitado a la celebración de nuestra boda</p>
-                <div class="ticket">
-                    <p class="ticket-for">Pase reservado para:</p>
-                    <p class="guest-name">Fam. Martínez Ramírez</p>
-                    <p class="ticket-number">2 pases</p>
-                </div>
-                <a href="#" class="btn confirm-button">Abrir invitación</a>
-                <p class="footer">MiConvite.com</p>
             </div>
+            <div class="ticket">
+                <p class="ticket-text">Pase reservado para</p>
+                <p class="family">Fam. -------</p>
+                <p class="passes">N pases</p>
+            </div>
+            <button class="open-button">
+                <a href="https://bet0gonzalez1995.github.io/invitacionBoda" target="_blank">
+                    INVITACIÓN
+                </a>
+            </button>
         </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
