@@ -1,3 +1,44 @@
+/*
+#28344F (Azul oscuro)
+#8A95A5 (Gris azulado medio)
+#B3BDCC (Gris azulado claro)
+#D9CBBF (Beige claro)
+#F5F4F9 (Blanco hueso)
+*/
+
+@font-face {
+    font-family: 'adelia';
+    /* Nombre que le darás a la fuente */
+    src: url('adelia_3/adelia.ttf') format('truetype');
+    /* Ruta al archivo .ttf */
+    font-weight: normal;
+    /* Peso de la fuente (normal, bold, etc.) */
+    font-style: normal;
+    /* Estilo de la fuente (normal, italic, etc.) */
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    /* Nombre que le darás a la fuente */
+    src: url('Cormorant_Garamond/CormorantGaramond-Regular.ttf') format('truetype');
+    /* Ruta al archivo .ttf */
+    font-weight: normal;
+    /* Peso de la fuente (normal, bold, etc.) */
+    font-style: normal;
+    /* Estilo de la fuente (normal, italic, etc.) */
+}
+
+@font-face {
+    font-family: 'TT Drugs Trial Regular';
+    /* Nombre que le darás a la fuente */
+    src: url('tt_drugs/TT_Drugs_Trial_Regular.otf') format('truetype');
+    /* Ruta al archivo .ttf */
+    font-weight: normal;
+    /* Peso de la fuente (normal, bold, etc.) */
+    font-style: normal;
+    /* Estilo de la fuente (normal, italic, etc.) */
+}
+
 * {
     margin:0;
     padding:0;
@@ -5,4 +46,47 @@
 .container-fluid{
     padding-left: 0;
     padding-right: 0;
+    
+}
+
+.principal{
+    position: absolute;
+}
+.contenedor{
+    text-align: center;
+    position: absolute;
+}
+.txtBoda{
+    font-size: 30px;
+    color: white;
+    margin-top: 80px;
+
+}
+.txtNovios{
+    margin-top: 60px;
+    font-family: "adelia";
+    color: white;
+    font-size: 60px;
+}
+
+.reproductor {
+    position: relative; /* Posicionamiento absoluto */
+    margin-top: 95%;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .txtBoda{
+        margin-top: 40px;
+        font-size: 18px;
+    }
+    .txtNovios{
+        margin-top: 20px;
+        font-family: "adelia";
+        color: white;
+        font-size: 25px;
+    }
+    .reproductor {
+        margin-top: 65%;
+    }
 }
