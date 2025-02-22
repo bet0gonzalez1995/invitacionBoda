@@ -76,6 +76,22 @@
     letter-spacing: 0.05em;
     color: #8A95A5;
 }
+.img-inicial {
+    width: 100%;
+    /* Ancho del viewport (pantalla) */
+    height: 1930px;
+    /* Alto del viewport (pantalla) */
+    background-image: url("../files/fondo.jpeg");
+    background-size: cover;
+    /* Cubre todo el div */
+    background-position: inherit;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que se repita la imagen */
+}
+.reproductor{
+    margin-top: 1430px;
+}
 
 .florestop {
     width: 100%;
@@ -192,6 +208,7 @@
     font-size: 50px;
     font-family: "TT Drugs Trial Regular";
     color: #8A95A5;
+    
 }
 
 .tiempo {
@@ -450,8 +467,20 @@ a {
 
 
 /* Media queries para diseño responsivo */
-@media (max-width: 768px) {
+/*
+@media only screen {
+    .img-inicial{
+        height: 1930px;
+    }
+}*/
 
+
+ 
+@media (max-width: 768px) {
+    .img-inicial{
+        height: 584px;
+    }
+    .img-inicial,
     .florestop,
     .floresmiddle,
     .floresleft,
@@ -635,4 +664,10 @@ a {
         margin: 10px 0;
     }
 
+}
+
+@media only screen and (min-width: 1200px) {
+    .img-inicial{
+        height: 1930px;
+    }
 }
