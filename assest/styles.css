@@ -478,7 +478,7 @@ a {
  
 @media (max-width: 768px) {
     .img-inicial{
-        height: 584px;
+        height: 515px;
     }
     .img-inicial,
     .florestop,
@@ -488,7 +488,10 @@ a {
     .floresMR {
         background-size: contain;
     }
-
+    .reproductor{
+        margin-top: 300px;
+    }
+    
     .floresleft {
         height: 100%;
         /* Centrar verticalmente */
@@ -508,12 +511,13 @@ a {
     }
 
     .txtNovios {
-        font-size: 45px;
+        font-size: 30px;
     }
 
     .txtBoda {
         font-size: 25px;
         margin-bottom: 20px;
+        margin-top: 30px;
     }
 
     .tiempo {
@@ -664,10 +668,4 @@ a {
         margin: 10px 0;
     }
 
-}
-
-@media only screen and (min-width: 1200px) {
-    .img-inicial{
-        height: 1930px;
-    }
 }
