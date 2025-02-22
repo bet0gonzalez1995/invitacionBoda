@@ -40,39 +40,51 @@
 }
 
 * {
-    margin:0;
-    padding:0;
-}
-.container-fluid{
-    padding-left: 0;
-    padding-right: 0;
-    
+    margin: 0;
+    padding: 0;
 }
 
-.principal{
-    position: absolute;
+.container-fluid {
+    position: relative; /* Necesario para posicionar elementos absolutos dentro */
 }
-.contenedor{
-    text-align: center;
-    position: absolute;
+
+.principal {
+    width: 100%; /* Imagen responsiva al 100% */
+    display: block; /* Evita espacios extra debajo de la imagen */
 }
-.txtBoda{
+
+.txtBoda,
+.txtNovios,
+.reproductor {
+    position: absolute; /* Posicionamiento absoluto sobre la imagen */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translateX(-50%); /* Centrado horizontalmente fino */
+    text-align: center; /* Alineación del texto al centro */
+    color: white; /* Color del texto blanco */
+}
+
+.txtBoda {
+    top: 20px; /* Ajusta la posición vertical */
     font-size: 30px;
-    color: white;
-    margin-top: 80px;
-
 }
-.txtNovios{
-    margin-top: 60px;
-    font-family: "adelia";
-    color: white;
+
+.txtNovios {
+    top: 60px; /* Ajusta la posición vertical */
+    font-family: "adelia"; /* Si tienes una fuente personalizada */
     font-size: 60px;
 }
 
 .reproductor {
-    position: relative; /* Posicionamiento absoluto */
-    margin-top: 95%;
-    padding: 10px 0;
+    bottom: 0px; /* Ajusta la posición vertical para el reproductor */
+    width: 90%; /* Ancho del reproductor (ajusta según necesites) */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el reproductor */
+    padding: 10px; /* Espaciado interno para el reproductor */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+/* Opcional: Estilos para el reproductor de audio */
+.reproductor audio {
+    width: 100%; /* El reproductor de audio ocupa todo el ancho del div reproductor */
 }
 
 @media (max-width: 768px) {
@@ -90,3 +102,46 @@
         margin-top: 80%;
     }
 }
+/*
+* {
+    margin:0;
+    padding:0;
+    color: red;
+}
+
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+.contenedor{
+    
+    /* Utilizamos flexbox para centrar verticalmente 
+    flex-direction: column;
+    /* Colocamos los elementos en columna 
+    text-align: center;
+    border: 1px solid red;
+}
+
+.principal{
+    width: 100%;
+}
+
+.txtBoda{
+    text-align: center;
+}
+
+/*
+
+.txtNovios{
+    margin-top: 60px;
+    font-family: "adelia";
+    color: white;
+    font-size: 60px;
+}
+
+.reproductor {
+    position: relative; /* Posicionamiento absoluto 
+    bottom: 0%;
+    padding: 10px 0;
+}
+
