@@ -42,17 +42,26 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Asegura que padding y border se incluyan en el ancho/alto */
+}
+
+body {
+    margin: 0; /* Elimina márgenes predeterminados del body */
 }
 
 .container-fluid {
     position: relative; /* Necesario para posicionar elementos absolutos dentro */
+    padding: 0;
+    overflow: hidden; /* Evita scroll si la imagen es más grande que la ventana */
 }
 
 .principal {
     width: 100%; /* Imagen responsiva al 100% */
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
     display: block; /* Evita espacios extra debajo de la imagen */
 }
-
+.txt,
 .txtBoda,
 .txtNovios,
 .reproductor {
@@ -75,9 +84,8 @@
 }
 
 .reproductor {
-    bottom: 0px; /* Ajusta la posición vertical para el reproductor */
-    width: 90%; /* Ancho del reproductor (ajusta según necesites) */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el reproductor */
+    bottom: 2%; /* Ajusta la posición vertical para el reproductor */
+    width: 40%; /* Ancho del reproductor (ajusta según necesites) */
     padding: 10px; /* Espaciado interno para el reproductor */
     box-sizing: border-box; /* Incluye el padding en el ancho total */
 }
@@ -85,6 +93,27 @@
 /* Opcional: Estilos para el reproductor de audio */
 .reproductor audio {
     width: 100%; /* El reproductor de audio ocupa todo el ancho del div reproductor */
+}
+.flores{
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.monograma {
+    position: relative;
+    height: auto;
+    width: 50%;
+    left: 25%;
+    /* Centrar horizontalmente */
+}
+
+.txtDateBoda {
+    margin-bottom: 60px;
+    font-size: 100px;
+    font-family: "Cormorant Garamond";
+    letter-spacing: 0.05em;
+    color: #8A95A5;
 }
 
 @media (max-width: 768px) {
@@ -99,7 +128,12 @@
         font-size: 25px;
     }
     .reproductor {
-        margin-top: 80%;
+        width: 40%; /* Ancho del reproductor (ajusta según necesites) */
+    }
+    .monograma {
+       
+        width: 40%;
+       left: 30%;
     }
 }
 /*
