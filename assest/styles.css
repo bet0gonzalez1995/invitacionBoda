@@ -79,9 +79,9 @@
 .img-inicial {
     width: 100%;
     /* Ancho del viewport (pantalla) */
-    height: 1930px;
+    height: 1200px;
     /* Alto del viewport (pantalla) */
-    background-image: url("../files/fondo.jpeg");
+    background-image: url("../files/galery/DSC_0902.jpg");
     background-size: cover;
     /* Cubre todo el div */
     background-position: inherit;
@@ -513,7 +513,9 @@ a {
  
 @media (max-width: 768px) {
     .img-inicial{
-        height: 515px;
+        height: 580px;
+        /* Alto del viewport (pantalla) */
+        background-image: url("../files/galery/DSC_0831.jpg");
     }
     .img-inicial,
     .florestop,
