@@ -50,6 +50,7 @@
     overflow: hidden;
 }
 
+
 .monograma {
     height: auto;
     width: 30%;
@@ -60,12 +61,12 @@
 .txtNovios {
     font-family: "adelia";
     font-size: 100px;
-    color: #8A95A5;
+    color: white;
 }
 
 .txtBoda {
     font-size: 50px;
-    color: #8A95A5;
+    color: white;
     margin-bottom: 100px;
 }
 
@@ -79,7 +80,7 @@
 .img-inicial {
     width: 100%;
     /* Ancho del viewport (pantalla) */
-    height: 1200px;
+    height: 1500px;
     /* Alto del viewport (pantalla) */
     background-image: url("../files/galery/DSC_0902.jpg");
     background-size: cover;
@@ -90,7 +91,7 @@
     /* Evita que se repita la imagen */
 }
 .reproductor{
-    margin-top: 1430px;
+    margin-top: 1000px;
 }
 
 .florestop {
@@ -292,8 +293,8 @@
 }
 
 .imagen {
+    height: 1200px;
     flex: 0 0 33.33%;
-    /* Cada imagen ocupa un tercio del ancho */
     max-width: 33.33%;
     padding: 5px;
     /* Espacio entre imágenes */
@@ -526,7 +527,7 @@ a {
         background-size: contain;
     }
     .reproductor{
-        margin-top: 300px;
+        margin-top: 350px;
     }
     
     .floresleft {
@@ -537,7 +538,6 @@ a {
         justify-content: space-around;
         /* Distribuye las tarjetas uniformemente */
     }
-
     .cuenta-regresiva {
         margin-bottom: 50px;
     }
@@ -582,6 +582,7 @@ a {
     }
 
     .imagen {
+        height: 500px;
         flex: 0 0 100%;
         /* Cada imagen ocupa el 100% del ancho */
         max-width: 100%;
