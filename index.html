@@ -67,8 +67,8 @@
         </div>
     </div>
     <div class="contenedor">
-        <img src="files/galery/DSC_1006.jpg" class="imgFS">
-        <img src="files/galery/DSC_0902.jpg" class="imgFM">
+        <img src="files/galery/DSC_1006.jpg" class="imgFS" style="display: none;">
+        <img src="files/galery/DSC_0902.jpg" class="imgFM" style="display: none;">
     </div>
     <div class="contenedor">
         <p class="txtMensaje">
@@ -276,7 +276,13 @@
 
         // Inicia el carrusel automático en dispositivos móviles
         if (window.innerWidth <= 768) {
+            const imgFM = document.querySelector('.imgFM');
+            imgFM.style.display="block";
+
             iniciarCarruselAutomatico();
+        }else{
+            const imgFS = document.querySelector('.imgFS');
+            imgFS.style.display="block";
         }
 
        
