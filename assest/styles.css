@@ -289,11 +289,12 @@
 
 .carrusel {
     display: flex;
+    flex-wrap: wrap;
     transition: transform 0.5s ease-in-out;
+    width: 100%;
 }
 
 .imagen {
-    height: 1200px;
     flex: 0 0 33.33%;
     max-width: 33.33%;
     padding: 5px;
@@ -511,7 +512,14 @@ a {
     margin-top: 10px;
     font-size: 20px;
 }
- 
+
+.imgFS{
+    display: block;
+}
+
+.imgFM{
+    display: none;
+}
 @media (max-width: 768px) {
     .img-inicial{
         height: 580px;
@@ -580,7 +588,10 @@ a {
         padding: 40px;
         /* Espacio alrededor del texto */
     }
-
+    .carrusel {
+        flex-wrap: nowrap;
+        
+    }
     .imagen {
         height: 500px;
         flex: 0 0 100%;
@@ -719,5 +730,13 @@ a {
     }
     .imghotel{
         width: 30%;
+    }
+
+    .imgFS{
+        display: none;
+    }
+    
+    .imgFM{
+        display: block;
     }
 }
